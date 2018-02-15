@@ -109,7 +109,7 @@ MESHNET="$MESHNET"
 DEFAULT_ROUTE="$(ip route | head -n1 | sed 's/onlink/proto static/g')"
 EOF
 
-git clone https://github.com/sudomesh/exitnode /opt/exitnode
+git clone https://github.com/paidforby/exitnode /opt/exitnode
 cp -r /opt/exitnode/src/etc/* /etc/
 cp /opt/exitnode/l2tp_broker.cfg $TUNNELDIGGER_HOME/broker/l2tp_broker.cfg
 
